@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
 
     margin: 0;
@@ -23,8 +25,29 @@ p {
     border: 2px solid black;
     padding: 5px;
 }
-.apresentacao{display: flex;
-    align-items: center;
+.apresentacao{
+    margin: 10%;
+    display: flex;
+    align-items: center;justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px; font-family: "Krona One", serif;
+}
+
+.Apresentacao-habilidades {
+    font-size: 24px; 
+    font-family:"Montserrat", serif;
+}
+
+.rodape {
+    margin: 10%;
+    display: flex;
+    align-items: auto;justify-content: space-between;
 }
 
 .responsivo-container {
