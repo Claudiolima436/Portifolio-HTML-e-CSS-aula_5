@@ -1,36 +1,57 @@
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+
     margin: 0;
     padding: 0;
 }
 
-.apresentacao__conteudo {
-    padding: 20px;
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
 }
 
-/* Flexbox para layout responsivo */
-.apresentacao {
+.titulo-destaque{
+    color: #22D4FD;
+}
+.Apresentacao-habilidades{ color:white;
+
+}
+
+p {
+    margin: 10px;
+    border: 2px solid black;
+    padding: 5px;
+}
+.apresentacao{
+    margin: 10%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: center;justify-content: space-between;
 }
 
-/* Imagens responsivas */
-img {
-    max-width: 100%;
-    height: auto;
+.apresentacao__conteudo {
+    width: 615px;
 }
 
-/* Media Queries para dispositivos móveis */
-@media (min-width: 600px) {
-    .apresentacao {
-        flex-direction: row;
-        text-align: left;
-    }
-
-    .apresentacao__conteudo {
-        max-width: 50%;
-    }
+.apresentacao__conteudo__titulo {
+    font-size: 36px; font-family: "Krona One", serif;
 }
+
+.Apresentacao-habilidades {
+    font-size: 24px; 
+    font-family:"Montserrat", serif;
+}
+
+.rodape {
+    margin: 10%;
+    display: flex;
+    align-items: auto;justify-content: space-between;
+}
+
+.responsivo-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
