@@ -26,13 +26,16 @@ p {
     padding: 5px;
 }
 .apresentacao{
-    margin: 10%;
+    margin: 10% 15%;
     display: flex;
     align-items: center;justify-content: space-between;
 }
 
 .apresentacao__conteudo {
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .apresentacao__conteudo__titulo {
@@ -46,21 +49,53 @@ p {
 
 .apresentacao__links {
     display: flex; 
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao_links_subtitulo {
+    font-family: 'Krona one', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .apresentacao__links__link{
-    background-color: #22D4FD;
-    width: 280px;
+    /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #22D4FD;
+    width: 378px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 24px;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #000000;
+    color: #f6f6f6;
     font-family:"Montserrat", serif;
 }
+
+.apresentacao__links__link:hover {
+    background-color: #272727;
+}
+   
+.imagem-exclusiva {
+    width: 100%; /* Torna a imagem responsiva */
+    max-width: 400px; /* Define um tamanho máximo */
+    border-radius: 10px; /* Adiciona cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra à imagem */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a transição */
+}
+
+.imagem-exclusiva:hover {
+    transform: scale(1.05); /* Amplia levemente a imagem ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Intensifica a sombra no hover */
+}
+
+
 
 .rodape {
     margin: 10%;
